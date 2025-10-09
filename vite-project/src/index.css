@@ -1,0 +1,17 @@
+*{
+    color: red;
+}
+body{
+    background-color: black;
+}
+
+.allCardsInIt {
+    background-image: url(../src/assets/1416117-black-and-gray-backgrounds-1080x1920-for-macbook.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10%;
+    cursor: pointer;
+}

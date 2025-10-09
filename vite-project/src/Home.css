@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/1416117-black-and-gray-backgrounds-1080x1920-for-macbook.jpg);
+}
+.biggestDivHome{
+    margin-top: 20vh;
+    width: fit-content;
+    display: grid;
+    gap: 2%;
+    height: fit-content;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.bigDiv{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-size:calc(20px + 3vw) ;
+    cursor: pointer;
+    box-shadow: 20px 0px 20px black;
+}
+.bigDiv:hover{
+    box-shadow: 0 8px 20px red;
+}

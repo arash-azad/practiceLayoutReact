@@ -1,0 +1,19 @@
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    height: fit-content;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: black;
+    margin-bottom: 0;
+    margin-top: 10vh;
+
+}
+.logo {
+    font-weight: bold;
+    font-size: 5vh;
+    color: red;
+}
