@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "./Cards.css";
+import Counter from "./Counter";
+import "./RecipeReviewCard.css";
+import Loadingimg from "./assets/images";
 
 export default function Cards() {
   const [posts, setPosts] = useState(null);
-  const [count, setCount] = useState(0);
 
   useEffect(() => {
     async function requestHandler() {
@@ -18,7 +19,10 @@ export default function Cards() {
   return (
     <div style={{ width: "100%"}}>
       {posts === null && (
-        <p style={{ fontSize: "40px", textAlign: "center",marginTop:"50vh"}}>Loading... <i class="bi bi-arrow-clockwise"></i></p>
+        <div style={{margin:"0 auto",overflow:"hidden", display:"flex",justifyContent:"center",alignContent:"center",boxSizing:"border-box",zIndex:"999",width:"fit-content",height:"fit-content",borderRadius:"20px"}} >
+          {/* <p style={{ fontSize: "40px", textAlign: "center"}}>Loading... </p> */}
+          <Loadingimg/>
+        </div>
       )}
 
       <div className="gridWrapper">
@@ -35,15 +39,7 @@ export default function Cards() {
             <p style={{border:"5px solid red",borderRadius:"15px",padding:"5px"}}>
             <i class="bi bi-tag-fill"></i> price : {post.price}$<br/>
             </p>
-            <div className="counterBox">
-            <button className="counterBtn" onClick={() =>{ 
-              if(count>0){
-              setCount(count - 1)
-              }
-              }}>-</button>
-            <span className="counterNumber">{count}</span>
-            <button className="counterBtn" onClick={() => setCount(count + 1)}>+</button>
-             </div>
+          <Counter/>
             <button className="buyNowBtn">
             <i className="bi bi-cart-fill"></i>
             <span className="btnText">Buy Now</span>

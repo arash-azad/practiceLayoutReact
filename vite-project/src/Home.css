@@ -1,8 +1,11 @@
-body{
+
+.flexFixer{
+    width: 100%;
+    padding-bottom: 20vh;
     display: flex;
+    height: fit-content;
     justify-content: center;
     align-items: center;
-    background-image: url(./assets/1416117-black-and-gray-backgrounds-1080x1920-for-macbook.jpg);
 }
 .biggestDivHome{
     margin-top: 20vh;

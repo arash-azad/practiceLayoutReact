@@ -1,6 +1,6 @@
 .bottom{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     left: 0;
@@ -9,11 +9,25 @@
     box-sizing: border-box;
     background-color: black;
     margin-bottom: 0;
-    margin-top: 10vh;
-
+    position: absolute;
 }
 .logo {
     font-weight: bold;
     font-size: 5vh;
     color: red;
+}
+.logo a {
+    color: red;
+    text-decoration: none;
+}
+.logo a:hover {
+    text-decoration: underline;
+}
+@media screen and (max-width: 991px) {
+    #copyright{
+        display: none;
+    }
+    .bottom{
+        justify-content: center;
+    }
 }
