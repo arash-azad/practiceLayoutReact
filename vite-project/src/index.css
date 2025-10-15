@@ -1,14 +1,13 @@
+@import "tailwindcss";
 *{
     color: red;
     font-family: sans-serif;
-    
 }
 body{
     background-image: url(../src/assets/1416117-black-and-gray-backgrounds-1080x1920-for-macbook.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
     
     .allCardsInIt {
