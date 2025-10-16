@@ -5,11 +5,11 @@
     width: 100%;
     left: 0;
     height: fit-content;
-    padding: 20px;
+    padding: 2vh;
     box-sizing: border-box;
     background-color: black;
     margin-bottom: 0;
-    position: absolute;
+    position: relative;
 }
 .logo {
     font-weight: bold;
