@@ -31,12 +31,12 @@ export default function Cards() {
 
       <div className="gridWrapper">
         {posts?.map((post) => (
-          <div  onClick={()=>navigate(`/products/${post.id}`)} key={post.id} className="cardItem">
+          <div  key={post.id} className="cardItem">
             <div style={{display:"flex", width:"100%",flexDirection:"row",justifyContent:"space-between"}} >
           <span ><u>{post.rating.rate}/5  <i class="bi bi-star-fill"></i></u></span>
           <span><u>{post.rating.count}  </u><i class="bi bi-chat-left-dots"></i></span>
             </div>
-            <img src={post.image} alt={post.title} className="cardImage" />
+            <img onClick={()=>navigate(`/products/${post.id}`)}  src={post.image} alt={post.title} className="cardImage" />
             <p><b>ID:</b> {post.id}</p>
             <p className="cardTitle">{post.title}</p>
             <p>{post.category}</p>
